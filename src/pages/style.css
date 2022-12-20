@@ -1,0 +1,64 @@
+/* .dashboard {
+  background: #1F2428;
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+  box-sizing : border-box;
+  height: 100vh;
+  padding: 30px;
+} */
+
+.semi-donut{
+  width: 300px;
+  height: 150px;
+  position: relative;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  /* overflow: hidden; */
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  /* box-sizing : border-box; */
+  color: black;
+
+
+}
+.semi-donut:after{
+  content: '';
+  width: 300px;
+  height: 300px;
+  border:50px solid;
+  border-color : yellow green #fff red;
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  box-sizing : border-box;
+  animation : fillAnimation 1s ease-in;
+}
+
+.counter-needle {
+  width: 5px;
+  height: 50px;
+  background-color: red;
+  transform: rotate(45deg);
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform-origin: 50% 50%;
+  animation: rotate 0.5s ease-in-out;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
